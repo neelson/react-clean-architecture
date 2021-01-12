@@ -73,4 +73,16 @@ describe('Login Component', () => {
     expect(passwordStatus.title).toBe('Tudo certo!')
     expect(passwordStatus.textContent).toBe('v')
   })
+
+  test('Should enable submit button if form is valid', () => {
+    const { sut, validationStub } = makeSut()
+    validationStub.errorMessage = null
+    const emailnput = sut.getByTestId('email')
+    fireEvent.input(emailnput, { target: { value: faker.internet.email() } })
+    const passwordInput = sut.getByTestId('password')
+    fireEvent.input(passwordInput, { target: { value: faker.internet.password() } })
+
+    const subitButton = sut.getByTestId('submit') as HTMLButtonElement
+    expect(subitButton.disabled).toBe(false)
+  })
 })
