@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/neelson/react-clean-architecture.svg?branch=main)](https://travis-ci.org/neelson/react-clean-architecture)
