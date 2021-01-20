@@ -64,7 +64,7 @@ const testElementText = (sut: RenderResult, fieldName: string, text: string): vo
 const testStatusForField = (sut: RenderResult, fieldName: string, validationError?: string): void => {
   const fieldStatus = sut.getByTestId(`${fieldName}-status`)
   expect(fieldStatus.title).toBe(validationError || 'Tudo certo!')
-  expect(fieldStatus.textContent).toBe(validationError ? 'x' : 'v')
+  expect(fieldStatus.textContent).toBe(validationError ? '🔴' : '🟢')
 }
 
 const testButtonIsDisabled = (sut: RenderResult, fieldName: string, isDisabled: boolean): void => {
