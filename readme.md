@@ -1,1 +1,2 @@
 [![Build Status](https://travis-ci.org/neelson/react-clean-architecture.svg?branch=main)](https://travis-ci.org/neelson/react-clean-architecture)
+[![Coverage Status](https://coveralls.io/repos/github/neelson/react-clean-architecture/badge.svg?branch=main)](https://coveralls.io/github/neelson/react-clean-architecture?branch=main)
